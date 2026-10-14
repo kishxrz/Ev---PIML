@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #05070e;
+    color: #e2e8f0;
+  }
+}
+
+.font-telemetry {
+  font-family: 'Rajdhani', monospace, sans-serif;
+}
+
+/* Custom Glassmorphism Panels */
+.glass-panel {
+  background: radial-gradient(circle at 50% 0%, rgba(20, 32, 54, 0.75) 0%, rgba(10, 16, 28, 0.85) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-cowl {
+  background: radial-gradient(circle at 50% 15%, #182238 0%, #0d1322 45%, #060911 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 3px solid #38bdf8;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), inset 0 2px 14px rgba(56, 189, 248, 0.2), inset 0 0 50px rgba(5, 8, 16, 0.95);
+}
+
+/* Custom glowing effects */
+.glow-cyan {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.6), 0 0 40px rgba(0, 242, 254, 0.3);
+}
+
+.glow-green {
+  text-shadow: 0 0 20px rgba(52, 211, 153, 0.6), 0 0 40px rgba(16, 185, 129, 0.3);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
